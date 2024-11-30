@@ -36,7 +36,7 @@ The corresponding event listener class:
         #[AsEventListener('my-package/backend/password-has-been-reset')]
         public function __invoke(PasswordHasBeenResetEvent $event): void
         {
-            $userUid = $event->userUid;
+            $userUid = $event->userId;
             // Do something with the be_user UID
         }
     }
